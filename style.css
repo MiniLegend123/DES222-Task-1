@@ -1,7 +1,67 @@
-body {
-    background-color: aqua;
+:root {
+    /* Standard Colours */
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    /* Color Pallete */
+    --colour1: #0077B6;
+    --colour2: #00B4D8;
+    --colour3: #03045E;
+    --colour4: #90E0EF;
+    --colour5: #CAF0F8;
 }
 
-h1 {
-    color: blueviolet;
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    /*font-family: ;*/
+}
+
+body {
+    background-color: var(--colour5);
+
+}
+
+.banner {
+    background-color: var(--colour4);
+    color: var(--colour3);
+    font-family: 'Jolly Lodger';
+    font-style: italic;
+    font-size: 3em;
+    padding: 1.25em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: .5em;
+            
+}
+
+.sub-banner {
+    background-color: var(--colour4);
+    color: var(--colour3);
+    font-family: 'Jolly Lodger';
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 1.25em;
+    height: 1.5em;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-radius: .5em;
+}
+
+.image-frame {
+    background-color: var(--colour1);
+    color: var(--colour5);
+    border-radius: 1em;
+    text-align: center;
+    padding: .5em;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.image-blurb {
+    padding: 1em;
 }
