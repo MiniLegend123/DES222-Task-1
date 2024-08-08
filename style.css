@@ -13,7 +13,7 @@
 .main-container {
     max-width: 72em;
     margin: 0 auto;
-    /*font-family: ;*/
+    font-family: kavoon;
 }
 
 body {
@@ -26,9 +26,9 @@ body {
     color: var(--colour3);
     font-family: 'Jolly Lodger';
     font-style: italic;
-    font-size: 3em;
-    padding: 1.25em;
-    height: 1.5em;
+    font-size: 4em;
+    padding: 1em;
+    height: 1.25em;
     text-align: center;
     border-radius: .5em;
             
@@ -64,4 +64,207 @@ body {
 
 .image-blurb {
     padding: 1em;
+}
+
+#banner {
+    grid-area: ban;
+}
+
+#sub-banner-1 {
+    grid-area: sb1;
+}
+
+#image-frame-1 {
+    grid-area: if1;
+}
+
+#image-frame-2 {
+    grid-area: if2;
+}
+
+#sub-banner-2 {
+    grid-area: sb2;
+}
+
+#image-frame-3 {
+    grid-area: if3;
+}
+
+#image-frame-4 {
+    grid-area: if4;
+}
+
+#sub-banner-3 {
+    grid-area: sb3;
+}
+
+#image-frame-5 {
+    grid-area: if5;
+}
+
+#image-frame-6 {
+    grid-area: if6;
+}
+
+#sub-banner-4 {
+    grid-area: sb4;
+}
+
+#image-frame-7 {
+    grid-area: if7;
+}
+
+#image-frame-8 {
+    grid-area: if8;
+}
+
+#sub-banner-5 {
+    grid-area: sb5;
+}
+
+#image-frame-9 {
+    grid-area: if9;
+}
+
+#image-frame-10 {
+    grid-area: if10;
+}
+
+#sub-banner-6 {
+    grid-area: sb6;
+}
+
+#image-frame-11 {
+    grid-area: if11;
+}
+
+#image-frame-12 {
+    grid-area: if12;
+}
+
+#sub-banner-7 {
+    grid-area: sb7;
+}
+
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+
+.main-container {
+    /* mobile phone layout */
+    grid-template:
+        " .   .   .   . " minmax(2em, auto)
+        "ban ban ban ban" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        "sb1 sb1 sb1 sb1" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if1 if1 if1 if1" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if2 if2 if2 if2" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        "sb2 sb2 sb2 sb2" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if3 if3 if3 if3" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if4 if4 if4 if4" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        "sb3 sb3 sb3 sb3" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if5 if5 if5 if5" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if6 if6 if6 if6" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        "sb4 sb4 sb4 sb4" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if7 if7 if7 if7" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if8 if8 if8 if8" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        "sb5 sb5 sb5 sb5" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if9 if9 if9 if9" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if10 if10 if10 if10" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        "sb6 sb6 sb6 sb6" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if11 if11 if11 if11" minmax(1em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "if12 if12 if12 if12" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        "sb7 sb7 sb7 sb7" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
+}
+
+@media (min-width: 50em) {
+    .main-container {
+            /* tablet layout */
+        grid-template:
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ban ban ban ban ban ban ban ban" minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .  sb1 sb1 sb1 sb1  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if1 if1 if1 if1 if2 if2 if2 if2" minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .  sb2 sb2 sb2 sb2  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if3 if3 if3 if3 if4 if4 if4 if4" minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .  sb3 sb3 sb3 sb3  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if5 if5 if5 if5 if6 if6 if6 if6" minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .  sb4 sb4 sb4 sb4  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if7 if7 if7 if7 if8 if8 if8 if8" minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .  sb5 sb5 sb5 sb5  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if9 if9 if9 if9 if10 if10 if10 if10" minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .  sb6 sb6 sb6 sb6  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if11 if11 if11 if11 if12 if12 if12 if12" minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .  sb7 sb7 sb7 sb7  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+    }
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        /* desktop layout */
+        grid-template:
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .   .  sb1 sb1 sb1 sb1 sb1 sb1  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if1 if1 if1 if1 if1 if1 if2 if2 if2 if2 if2 if2" minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .   .  sb2 sb2 sb2 sb2 sb2 sb2  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if3 if3 if3 if3 if3 if3 if4 if4 if4 if4 if4 if4" minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .   .  sb3 sb3 sb3 sb3 sb3 sb3  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if5 if5 if5 if5 if5 if5 if6 if6 if6 if6 if6 if6" minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .   .  sb4 sb4 sb4 sb4 sb4 sb4  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if7 if7 if7 if7 if7 if7 if8 if8 if8 if8 if8 if8" minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .   .  sb5 sb5 sb5 sb5 sb5 sb5  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if9 if9 if9 if9 if9 if9 if10 if10 if10 if10 if10 if10" minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .   .  sb6 sb6 sb6 sb6 sb6 sb6  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "if11 if11 if11 if11 if11 if11 if12 if12 if12 if12 if12 if12" minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            " .   .   .  sb7 sb7 sb7 sb7 sb7 sb7  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+    }
 }
