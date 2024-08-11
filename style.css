@@ -66,6 +66,13 @@ body {
     padding: 1em;
 }
 
+.references {
+    background-color: var(--colour1);
+    color: var(--colour5);
+    border-radius: 1em;
+    padding: .5em;
+}
+
 #banner {
     grid-area: ban;
 }
@@ -146,6 +153,10 @@ body {
     grid-area: sb7;
 }
 
+#references {
+    grid-area: ref;
+}
+
 .main-container {
     display: grid;
     column-gap: 1em;
@@ -195,6 +206,8 @@ body {
         " .   .   .   . " minmax(4em, auto)
         "sb7 sb7 sb7 sb7" minmax(1em, auto)
         " .   .   .   . " minmax(4em, auto)
+        "ref ref ref ref" minmax(1em, auto)
+        " .   .   .   . " minmax(4em, auto)
 }
 
 @media (min-width: 50em) {
@@ -229,6 +242,8 @@ body {
             "if11 if11 if11 if11 if12 if12 if12 if12" minmax(1em, auto)
             " .   .   .   .   .   .   .   . " minmax(4em, auto)
             " .   .  sb7 sb7 sb7 sb7  .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   . " minmax(4em, auto)
+            "ref ref ref ref ref ref ref ref" minmax(1em, auto)
             " .   .   .   .   .   .   .   . " minmax(4em, auto)
     }
 }
@@ -265,6 +280,8 @@ body {
             "if11 if11 if11 if11 if11 if11 if12 if12 if12 if12 if12 if12" minmax(1em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
             " .   .   .  sb7 sb7 sb7 sb7 sb7 sb7  .   .   . " minmax(1em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+            "ref ref ref ref ref ref ref ref ref ref ref ref" minmax(1em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
     }
 }
