@@ -2,12 +2,25 @@
     /* Standard Colours */
     --white-font: #FFFFFF;
     --black-font: #000000;
-    /* Color Pallete */
+    /* Color Pallete Old */
     --colour1: #0077B6;
     --colour2: #00B4D8;
     --colour3: #03045E;
     --colour4: #90E0EF;
     --colour5: #CAF0F8;
+    /* Color Pallete 1 */
+    --colour1-1: #14213D;
+    --colour1-2: #FCA311;
+    --colour1-3: #E5E5E5;
+    /* Color Pallete 2 */
+    --colour2-1: #304D6D;
+    --colour2-2: #63ADF2;
+    --colour2-3: #A7CCED;
+    /* Color Pallete 3 */
+    --colour3-1: #2B2D42;
+    --colour3-2: #8D99AE;
+    --colour3-3: #D90429;
+    --colour3-4: #EDF2F4;
 }
 
 .main-container {
@@ -17,13 +30,23 @@
 }
 
 body {
-    background-color: var(--colour5);
-
+    background-color: var(--colour3-2);
 }
 
 .banner {
-    background-color: var(--colour4);
-    color: var(--colour3);
+    background-color: var(--colour3-4);
+    color: var(--colour3-4);
+    /*-webkit-text-stroke-width: .1em;
+    -webkit-text-stroke-color: var(--colour3-3);*/
+    text-shadow: 4px 0px 5px var(--colour3-3),
+                0px 4px 5px var(--colour3-3),
+                -4px 0px 5px var(--colour3-3),
+                0px -4px 5px var(--colour3-3),
+                4px 4px 5px var(--colour3-3),
+                -4px 4px 5px var(--colour3-3),
+                4px -4px 5px var(--colour3-3),
+                -4px -4px 5px var(--colour3-3);
+    
     font-family: 'Jolly Lodger';
     font-style: italic;
     font-size: 4em;
@@ -31,46 +54,61 @@ body {
     height: 1.25em;
     text-align: center;
     border-radius: .5em;
-            
+    outline: var(--colour3-1) solid .5em;
+    outline-offset: -.5em;
 }
 
 .sub-banner {
-    background-color: var(--colour4);
-    color: var(--colour3);
+    background-color: var(--colour3-1);
+    color: var(--colour3-4);
     font-family: 'Jolly Lodger';
     font-style: italic;
     font-size: 1.5em;
     padding: 1.25em;
     height: 1.5em;
     text-align: center;
-    margin: auto;
-    width: 50%;
+    
     border-radius: .5em;
+    outline: var(--colour3-3) solid .5em;
+    outline-offset: -.5em;
 }
 
 .image-frame {
-    background-color: var(--colour1);
-    color: var(--colour5);
+    background-color: var(--colour3-4);
+    color: var(--colour3-1);
     border-radius: 1em;
     text-align: center;
     padding: .5em;
     overflow: hidden;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    -ms-flex-align: center;
+    justify-content: center;
+    gap: .5em;  
+      
 }
 
 .image {
     width: 100%;
     border-radius: 1em;
+    filter: saturate(.8);    
 }
 
 .image-blurb {
     padding: 1em;
+    border-radius: 1em;
+    outline: var(--colour3-1) solid .5em;
+    outline-offset: -.5em;
 }
 
 .references {
-    background-color: var(--colour1);
-    color: var(--colour5);
+    background-color: var(--colour3-4);
+    color: var(--colour3-1);
     border-radius: 1em;
-    padding: .5em;
+    padding: 2em;
+    outline: var(--colour3-1) solid .5em;
+    outline-offset: -1em;
 }
 
 #banner {
@@ -212,6 +250,47 @@ body {
 
 @media (min-width: 50em) {
     .main-container {
+        background-color: var(--colour2-3);
+        
+        .banner{
+            background-color: var(--colour2-2);
+            color: var(--colour2-2);
+            text-shadow: 4px 0px 5px var(--colour2-1),
+                        0px 4px 5px var(--colour2-1),
+                        -4px 0px 5px var(--colour2-1),
+                        0px -4px 5px var(--colour2-1),
+                        4px 4px 5px var(--colour2-1),
+                        -4px 4px 5px var(--colour2-1),
+                        4px -4px 5px var(--colour2-1),
+                        -4px -4px 5px var(--colour2-1);
+            outline: var(--colour2-1) solid .5em;
+        }
+
+        .sub-banner {
+            background-color: var(--colour2-1);
+            color: var(--colour2-3);
+            outline: var(--colour2-2) solid .5em;            
+        }
+
+        .image-frame {
+            background-color: var(--colour2-2);
+            color: var(--colour2-1);             
+        }
+
+        .image {
+            filter: saturate(.4);    
+        }
+
+        .image-blurb {
+            outline: var(--colour2-1) solid .5em;
+        }
+
+        .references {
+            background-color: var(--colour2-2);
+            color: var(--colour2-1);
+            outline: var(--colour2-1) solid .5em;
+        }
+
             /* tablet layout */
         grid-template:
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
@@ -250,6 +329,47 @@ body {
 
 @media (min-width: 75em) {
     .main-container {
+        background-color: var(--colour1-3);
+        
+        .banner{
+            background-color: var(--colour1-1);
+            color: var(--colour1-1);
+            text-shadow: 4px 0px 5px var(--colour1-2),
+                        0px 4px 5px var(--colour1-2),
+                        -4px 0px 5px var(--colour1-2),
+                        0px -4px 5px var(--colour1-2),
+                        4px 4px 5px var(--colour1-2),
+                        -4px 4px 5px var(--colour1-2),
+                        4px -4px 5px var(--colour1-2),
+                        -4px -4px 5px var(--colour1-2);
+            outline: var(--colour1-2) solid .5em;
+        }
+
+        .sub-banner {
+            background-color: var(--colour1-2);
+            color: var(--colour1-1);
+            outline: var(--colour1-1) solid .5em;            
+        }
+
+        .image-frame {
+            background-color: var(--colour1-1);
+            color: var(--colour1-3);             
+        }
+
+        .image {
+            filter: saturate(.15);    
+        }
+
+        .image-blurb {
+            outline: var(--colour1-2) solid .5em;
+        }
+
+        .references {
+            background-color: var(--colour1-1);
+            color: var(--colour1-3);
+            outline: var(--colour1-2) solid .5em;
+        }
+
         /* desktop layout */
         grid-template:
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
