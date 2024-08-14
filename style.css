@@ -21,6 +21,12 @@
     --colour3-2: #8D99AE;
     --colour3-3: #D90429;
     --colour3-4: #EDF2F4;
+
+    --btc: var(--colour3-1);
+    --sbtc: var(--colour3-3);
+    --bgc: var(--colour3-2);
+    --ibc1: var(--colour3-3);
+    --ibc2: purple;
 }
 
 .main-container {
@@ -30,7 +36,7 @@
 }
 
 body {
-    background-color: var(--colour3-2);
+    background-color: var(--bgc);
 }
 
 .banner {
@@ -58,6 +64,21 @@ body {
     outline-offset: -.5em;
 }
 
+.banner-title {
+    
+    background-image: linear-gradient(90deg, var(--btc), var(--btc));
+    background-repeat: no-repeat;
+    background-position: left 1em;
+    background-size: 0em 8px;
+    background-position-x: center;
+    
+    transition: background-size 500ms;
+}
+.banner-title:hover,
+.banner-title:focus {
+    background-size: 5em 8px;
+}
+
 .sub-banner {
     background-color: var(--colour3-1);
     color: var(--colour3-4);
@@ -65,12 +86,25 @@ body {
     font-style: italic;
     font-size: 1.5em;
     padding: 1.25em;
-    height: 1.5em;
+    height: 1.25em;
     text-align: center;
-    
     border-radius: .5em;
     outline: var(--colour3-3) solid .5em;
     outline-offset: -.5em;
+}
+
+.sub-banner-title {
+    background-image: linear-gradient(90deg, var(--sbtc), var(--sbtc));
+    background-repeat: no-repeat;
+    background-position: left 1em;
+    background-size: 0em 8px;
+    background-position-x: center;
+    
+    transition: background-size 500ms;
+}
+.sub-banner-title:hover,
+.sub-banner-title:focus {
+    background-size: 10em 8px;
 }
 
 .image-frame {
@@ -92,7 +126,13 @@ body {
 .image {
     width: 100%;
     border-radius: 1em;
-    filter: saturate(.8);    
+    filter: saturate(.8);
+    
+    transition: 500ms;
+}
+.image:hover,
+.image:focus {
+    border-radius: 5em;
 }
 
 .image-blurb {
@@ -100,6 +140,18 @@ body {
     border-radius: 1em;
     outline: var(--colour3-1) solid .5em;
     outline-offset: -.5em;
+
+    background-image: linear-gradient(90deg, var(--ibc1), var(--ibc2));
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0%;
+
+    transition: 500ms;
+}
+.image-blurb:hover,
+.image-blurb:focus {
+    background-size: 100%;
+    color: transparent;
 }
 
 .references {
@@ -109,6 +161,20 @@ body {
     padding: 2em;
     outline: var(--colour3-1) solid .5em;
     outline-offset: -1em;
+}
+
+.references-text {
+    background-image: linear-gradient(90deg, var(--ibc1), var(--ibc2));
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0%;
+
+    transition: 500ms;
+}
+.references-text:hover,
+.references-text:focus {
+    background-size: 100%;
+    color: transparent;
 }
 
 #banner {
@@ -249,8 +315,15 @@ body {
 }
 
 @media (min-width: 50em) {
+    body {
+        --bgc: var(--colour2-3);
+    }
     .main-container {
-        background-color: var(--colour2-3);
+        --btc: var(--colour2-1);
+        --sbtc: var(--colour2-2);
+        --ibc1: rgb(255, 0, 183);
+        --ibc2: rgb(212, 0, 255);
+        
         
         .banner{
             background-color: var(--colour2-2);
@@ -328,8 +401,14 @@ body {
 }
 
 @media (min-width: 75em) {
+    body {
+        --bgc: var(--colour1-3);
+    }
     .main-container {
-        background-color: var(--colour1-3);
+        --btc: var(--colour1-2);
+        --sbtc: var(--colour1-1);
+        --ibc1: red;
+        --ibc2: orange;
         
         .banner{
             background-color: var(--colour1-1);
